@@ -33,6 +33,7 @@ button {
 }
 .nums,
 .op, 
+#equal,
 #clear,
 #sign,
 #percent {
@@ -47,7 +48,8 @@ button {
 }
 
 .nums,
-.op {
+.op,
+#equal {
     color: #FFF;
 }
 
@@ -56,6 +58,7 @@ button {
     border-color: #505050;
 }
 
+#equal,
 .op {
     background-color: #FF9500;
     border-color: #FF9500;
