@@ -1,3 +1,11 @@
+const display = document.querySelector("#display");
+let numbtns = document.querySelectorAll(".nums");
+
+let num1 = '';
+let operator = '';
+let num2;
+let displayVal = '';
+
 numbtns.forEach(numbtn => {
     numbtn.addEventListener('click', () =>{
         updateDisplay(numbtn.value);
@@ -16,6 +24,11 @@ const clearBtn = document.querySelector("#clear").onclick = () => {
     num1 = '';
     num2 = '';
 };
+
+function clearDisplay(){
+    display.value = "";
+    displayVal = "";
+}
 
 let opbtns = document.querySelectorAll(".op").forEach(opbtn => {
     opbtn.addEventListener('click', () => {
