@@ -17,6 +17,14 @@ const clearBtn = document.querySelector("#clear").onclick = () => {
     num2 = '';
 };
 
+let opbtns = document.querySelectorAll(".op").forEach(opbtn => {
+    opbtn.addEventListener('click', () => {
+        operator = opbtn.value;
+        num1 += displayVal;
+        clearDisplay();
+    })
+})
+
 function add(){
     return num1 + num2
 }
