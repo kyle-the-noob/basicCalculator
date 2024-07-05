@@ -3,7 +3,7 @@ let numbtns = document.querySelectorAll(".nums");
 
 let num1 = '';
 let operator = '';
-let num2;
+let num2 = '';
 let displayVal = '';
 
 numbtns.forEach(numbtn => {
@@ -38,6 +38,12 @@ let opbtns = document.querySelectorAll(".op").forEach(opbtn => {
     })
 })
 
+const equalBtn = document.querySelector("#equal").onclick = () => {
+    num2 += displayVal;
+    clearDisplay();
+    operate();
+}
+
 function add(){
     return num1 + num2
 }
@@ -53,7 +59,6 @@ function divide(){
 function multiply(){
     return num1 * num2;
 }
-
 
 function operate(){
     if(operator == "+"){
