@@ -9,6 +9,14 @@ let updateDisplay = (numBtnVal) => {
     displayVal = display.value;
 }
 
+const clearBtn = document.querySelector("#clear").onclick = () => {
+    display.value = '';
+    displayVal = '';
+    operator = '';
+    num1 = '';
+    num2 = '';
+};
+
 function add(){
     return num1 + num2
 }
