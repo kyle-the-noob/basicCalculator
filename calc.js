@@ -1,3 +1,14 @@
+numbtns.forEach(numbtn => {
+    numbtn.addEventListener('click', () =>{
+        updateDisplay(numbtn.value);
+    })
+})
+
+let updateDisplay = (numBtnVal) => {
+    display.value += numBtnVal;
+    displayVal = display.value;
+}
+
 function add(){
     return num1 + num2
 }
